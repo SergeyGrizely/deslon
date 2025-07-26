@@ -80,7 +80,7 @@ namespace deslon
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            MySqlConnection mySqlConnection = new MySqlConnection("server=tsovyan.myjino.ru;port=3306;username=047094112_sergey;password=K@2j2344!s4P0%$p;database=tsovyan_deslon");
+            MySqlConnection mySqlConnection = new MySqlConnection("*******");
             try
             {
                 mySqlConnection.Open();
