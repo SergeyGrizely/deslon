@@ -56,7 +56,7 @@ namespace deslon
         string log = File.ReadAllText("Login.txt");
         private void Osnova_Load(object sender, EventArgs e)
         {
-            mySqlConnection = new MySqlConnection("server=tsovyan.myjino.ru;port=3306;username=047094112_sergey;password=K@2j2344!s4P0%$p;database=tsovyan_deslon");
+            mySqlConnection = new MySqlConnection("********************");
 
             mySqlConnection.Open();
 
@@ -155,7 +155,7 @@ namespace deslon
             //Если первая фамилия то делаешь так:
             var surname = array[0];
             var name = array[1];
-            MySqlConnection mySqlConnection = new MySqlConnection("server=tsovyan.myjino.ru;port=3306;username=047094112_sergey;password=K@2j2344!s4P0%$p;database=tsovyan_deslon");
+            MySqlConnection mySqlConnection = new MySqlConnection("**************");
             try
             {
                 mySqlConnection.Open();
@@ -203,8 +203,7 @@ namespace deslon
                 listView1.Items.Add(new ListViewItem() { BackColor = Color.Aquamarine, Text = time + "  " + richTextBox1.Text });
                 
                 string jsmes = JsonConvert.SerializeObject(new Response() { sms = richTextBox1.Text });
-                MySqlConnection mySqlConnection = new MySqlConnection("server=tsovyan.myjino.ru;port=3306;" +
-                    "username=047094112_sergey;password=K@2j2344!s4P0%$p;database=tsovyan_deslon;charset=utf8");
+                MySqlConnection mySqlConnection = new MySqlConnection("*************");
                 mySqlConnection.Open();
                 MySqlCommand command = new MySqlCommand("insert into messages" +
                 "(id_user, id_friend, message, date, message_status) Values (@myId, @fr, @mes, @time, 0)", mySqlConnection);
