@@ -40,7 +40,7 @@ namespace deslon
         List<User> ListUsers = new List<User>();
         private void Friends_Load(object sender, EventArgs e)
         {
-            mySqlConnection = new MySqlConnection("server=tsovyan.myjino.ru;port=3306;username=047094112_sergey;password=K@2j2344!s4P0%$p;database=tsovyan_deslon");
+            mySqlConnection = new MySqlConnection("************");
 
             mySqlConnection.Open();
 
@@ -82,7 +82,7 @@ namespace deslon
             //Если первая фамилия то делаешь так:
             var surname = array[1];
             var name = array[0];
-            MySqlConnection mySqlConnection = new MySqlConnection("server=tsovyan.myjino.ru;port=3306;username=047094112_sergey;password=K@2j2344!s4P0%$p;database=tsovyan_deslon");
+            MySqlConnection mySqlConnection = new MySqlConnection("*****************");
             try
             {
                 mySqlConnection.Open();
@@ -122,7 +122,7 @@ namespace deslon
             var surname = array[0];
             var name = array[1];
             //Если нет, то меняешь местами 0 и 1
-            MySqlConnection mySqlConnection = new MySqlConnection("server=tsovyan.myjino.ru;port=3306;username=047094112_sergey;password=K@2j2344!s4P0%$p;database=tsovyan_deslon");
+            MySqlConnection mySqlConnection = new MySqlConnection("*****************");
             try
             {
                 mySqlConnection.Open();
